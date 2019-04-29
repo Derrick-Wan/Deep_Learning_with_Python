@@ -3,7 +3,7 @@ import numpy as np
 from keras.utils.np_utils import to_categorical
 from keras import models
 from keras import layers
-
+import matplotlib.pyplot as plt
 (train_data, train_labels), (test_data, test_labels) = reuters.load_data(num_words=10000)
 
 
@@ -50,7 +50,6 @@ output = model.fit(partial_X_train, partial_y_train, epochs=20, batch_size=512, 
 
 # Draw the picture of the train.
 
-import matplotlib.pyplot as plt
 
 loss = output.history['loss']
 val_loss = output.history['val_loss']
