@@ -1,4 +1,4 @@
-Deep learning with Python (using keras)
+# Deep learning with Python (using keras)
 
 Author: Derrick Wan
 
